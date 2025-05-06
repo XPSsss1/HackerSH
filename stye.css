@@ -1,0 +1,78 @@
+/* Base styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://i.imgur.com/XYh0K6G.gif') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.glitch {
+    position: relative;
+    font-size: 4em;
+    color: #00ff00;
+    animation: glitch 1.5s infinite;
+}
+
+@keyframes glitch {
+    0% { transform: translate(2px, 0); }
+    20% { transform: translate(-2px, 0); }
+    40% { transform: translate(3px, 0); }
+    60% { transform: translate(-3px, 0); }
+    80% { transform: translate(2px, 0); }
+    100% { transform: translate(0, 0); }
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+    color: #00ff00;
+}
+
+audio {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 250px;
+    border: 2px solid #00ff00;
+    background-color: black;
+}
+
+
